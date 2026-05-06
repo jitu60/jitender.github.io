@@ -1,0 +1,53 @@
+# perseverance.ai - Portfolio Website
+title: perseverance.ai
+description: AI & Big Data Engineer | Agentic AI Enthusiast | Portfolio & Blog
+url: https://jitender.github.io
+baseurl: 
+
+# Author
+author:
+  name: Jitender
+  email: your-email@example.com
+  bio: Senior engineer with 13+ years experience. Big data tech specialist (Scala, Spark, Kafka). Now exploring Agentic AI and LLMs.
+
+# Social Links
+social_links:
+  github: https://github.com/jitu60
+  linkedin: https://linkedin.com/in/your-profile
+  twitter: https://twitter.com/your-handle
+  email: mailto:your-email@example.com
+
+# Jekyll Configuration
+theme: null
+plugins:
+  - jekyll-paginate
+  - jekyll-feed
+
+# Pagination
+paginate: 5
+paginate_path: /blog/page/:num/
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /blog/:year/:month/:day/:title/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      permalink: /blog/:year/:month/:day/:title/
+
+# Build settings
+markdown: kramdown
+
+# Exclude files
+exclude:
+  - .gitignore
+  - Gemfile
+  - Gemfile.lock
+  - README.md
